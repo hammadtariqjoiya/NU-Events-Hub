@@ -1,0 +1,112 @@
+/* Main colors are stored in variables so the theme can be changed easily. */
+:root {
+  --page-bg: #f4f7f3;
+  --card-bg: #ffffff;
+  --text-color: #24332b;
+  --muted-color: #66736b;
+  --green: #24764a;
+  --green-dark: #174b32;
+  --soft-green: #e4f1e7;
+  --border-color: #dce6de;
+}
+html[data-theme="dark"] {
+  --page-bg: #17221c;
+  --card-bg: #223129;
+  --text-color: #edf5ef;
+  --muted-color: #b8c7bd;
+  --green: #79c795;
+  --green-dark: #b1e2c0;
+  --soft-green: #304b3b;
+  --border-color: #405448;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--text-color);
+  font-family: poppins, sans-serif;
+  line-height: 1.6;
+}
+.site-navbar { background: #14251c; }
+.brand-logo { width: 42px; height: 32px; object-fit: contain; margin-right: 10px; }
+.brand-highlight { color: #8ed2a4; }
+.theme-button { color: #fff; border: 1px solid #8ed2a4; }
+.theme-button:hover { color: #14251c; background: #8ed2a4; }
+.home-hero {
+  min-height: 510px; display: flex; align-items: center; color: white;
+  background: linear-gradient(90deg, rgba(13,35,23,.88), rgba(13,35,23,.35)), url("../img/hero3.jpg") center/cover;
+}
+.hero-content { padding-top: 85px; padding-bottom: 85px; }
+.hero-content h1 { font-size: 3.5rem; font-weight: 800; line-height: 1.08; margin: 15px 0; }
+.hero-content h1 span { color: #a7e0b5; }
+.hero-content p { max-width: 620px; font-size: 1.1rem; margin-bottom: 28px; }
+.eyebrow { color: var(--green); font-size: .76rem; font-weight: 800; letter-spacing: 2px; }
+.home-hero .eyebrow { color: #b7e8c4; }
+.section-space { padding-top: 48px; padding-bottom: 20px; }
+.section-heading { display: flex; justify-content: space-between; align-items: end; margin-bottom: 22px; }
+.section-heading h2, .page-heading h1 { font-weight: 800; margin: 5px 0; }
+.page-content { min-height: 70vh; padding-top: 55px; padding-bottom: 70px; }
+.page-heading { margin-bottom: 35px; }
+.page-heading h1 { font-size: 2.8rem; }
+.page-heading p { color: var(--muted-color); max-width: 700px; }
+.section-title { font-size: 1.35rem; font-weight: 700; margin-bottom: 18px; }
+.featured-event { display: grid; grid-template-columns: 1.3fr 1fr; gap: 25px; align-items: center; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 18px; padding: 30px; }
+.featured-event h3 { font-size: 2rem; font-weight: 800; margin-top: 14px; }
+.countdown-panel { background: var(--soft-green); padding: 22px; border-radius: 14px; text-align: center; color: var(--text-color); }
+.countdown-panel > p { font-size: .75rem; letter-spacing: 1.5px; font-weight: 800; }
+.countdown { display: flex; justify-content: center; gap: 12px; margin: 16px 0; }
+.countdown div { min-width: 58px; }
+.countdown strong { display: block; font-size: 1.8rem; line-height: 1.2; }
+.countdown span { font-size: .75rem; color: var(--muted-color); }
+.event-card { background: var(--card-bg); color: var(--text-color); border: 1px solid var(--border-color); border-radius: 14px; overflow: hidden; transition: transform .25s ease; }
+.event-card:hover { transform: translateY(-5px); }
+.event-card p { color: var(--muted-color); }
+.category-pill { display: inline-block; padding: 5px 11px; border-radius: 20px; font-size: .75rem; font-weight: 700; background: var(--soft-green); color: var(--green-dark); }
+.category-pill.academic { background: #e0ebff; color: #254f91; }
+.category-pill.cultural { background: #fce8d9; color: #96501c; }
+.category-pill.sports { background: #e1f3df; color: #286b32; }
+.category-pill.career { background: #f0e5ff; color: #663b9b; }
+.event-meta { font-size: .9rem; color: var(--muted-color); }
+.text-link { color: var(--green); font-weight: 700; text-decoration: none; }
+.text-link:hover { color: var(--green-dark); text-decoration: underline; }
+.announcement-box { display: flex; align-items: center; gap: 20px; padding: 22px; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 14px; }
+.announcement-date { background: var(--soft-green); color: var(--green-dark); padding: 10px 17px; text-align: center; border-radius: 10px; font-size: .8rem; line-height: 1.2; }
+.announcement-date strong { font-size: 1.5rem; }
+.muted { color: var(--muted-color); }
+.news-slide { height: 340px; object-fit: cover; }
+.filter-buttons { display: flex; gap: 9px; flex-wrap: wrap; }
+.society-section { padding: 25px; border-radius: 16px; margin-bottom: 28px; background: var(--card-bg); border: 1px solid var(--border-color); }
+.society-heading { display: flex; gap: 12px; align-items: center; margin-bottom: 18px; }
+.society-heading span { padding: 7px 12px; border-radius: 8px; background: var(--soft-green); color: var(--green-dark); font-size: .8rem; font-weight: 700; }
+.society-heading h2 { margin: 0; font-weight: 800; }
+.society-card { height: 100%; padding: 22px; background: var(--page-bg); border: 1px solid var(--border-color); border-radius: 12px; transition: transform .25s ease, border-color .25s ease; }
+.society-card:hover { transform: translateY(-6px); border-color: var(--green); }
+.society-icon { display: flex; align-items: center; justify-content: center; width: 45px; height: 45px; border-radius: 12px; background: var(--soft-green); color: var(--green-dark); font-size: 1.5rem; margin-bottom: 12px; }
+.technical { border-left: 5px solid #397bc1; }
+.arts { border-left: 5px solid #bd7a39; }
+.sports { border-left: 5px solid #3b9b59; }
+.social { border-left: 5px solid #8b68b8; }
+.resource-tabs { border-color: var(--border-color); gap: 5px; }
+.resource-content { background: var(--card-bg); border: 1px solid var(--border-color); border-top: 0; border-radius: 0 0 14px 14px; padding: 28px; min-height: 300px; }
+.resource-content h2 { font-weight: 700; margin-bottom: 15px; }
+.form-panel { height: 100%; padding: 25px; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 15px; }
+.form-panel h2, .map-section h2 { font-weight: 800; margin-bottom: 8px; }
+.form-success { color: var(--green); font-weight: 700; }
+.map-frame { width: 100%; height: 350px; border-radius: 14px; overflow: hidden; border: 1px solid var(--border-color); }
+.map-frame iframe { width: 100%; height: 100%; border: 0; }
+.site-footer { margin-top: 30px; padding: 25px 0; background: #14251c; color: #e8f0ea; }
+
+@media (max-width: 767px) {
+  .home-hero { min-height: 460px; }
+  .hero-content h1 { font-size: 2.3rem; }
+  .page-heading h1 { font-size: 2.1rem; }
+  .hero-content { padding-top: 65px; padding-bottom: 65px; }
+  .featured-event { grid-template-columns: 1fr; padding: 22px; }
+  .section-heading { align-items: start; gap: 10px; }
+  .countdown { gap: 5px; }
+  .countdown div { min-width: 52px; }
+  .countdown strong { font-size: 1.45rem; }
+  .news-slide { height: 260px; }
+  .resource-tabs { flex-wrap: wrap; }
+  .resource-content { padding: 20px; }
+}

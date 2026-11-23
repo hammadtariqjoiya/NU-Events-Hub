@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NU Events Hub | Upcoming Events</title>
+  <link rel="icon" href="img/logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark site-navbar sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="img/block.png" alt="NU Events Hub logo" class="brand-logo">
+      <span>NU Events <span class="brand-highlight">Hub</span></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li><a class="nav-link " href="index.html">Home</a></li>
+        <li><a class="nav-link " href="news.html">News</a></li>
+        <li><a class="nav-link active" href="events.html">Upcoming Events</a></li>
+        <li><a class="nav-link " href="club.html">Clubs &amp; Societies</a></li>
+        <li><a class="nav-link " href="resources.html">Resources</a></li>
+        <li><a class="nav-link " href="contacts.html">Contact</a></li>
+        <li class="nav-item ms-lg-2"><button class="btn btn-sm theme-button" id="themeToggle" type="button">🌙 Dark mode</button></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main class="container page-content"><div class="page-heading"><h1>Upcoming Events</h1></div>
+<div class="filter-buttons mb-4"><button class="btn btn-success filter-btn active" data-filter="All">All events</button><button class="btn btn-outline-success filter-btn" data-filter="Academic">Academic</button><button class="btn btn-outline-success filter-btn" data-filter="Cultural">Cultural</button><button class="btn btn-outline-success filter-btn" data-filter="Sports">Sports</button><button class="btn btn-outline-success filter-btn" data-filter="Career">Career</button></div>
+<div class="row g-4" id="eventList"><div class="col-md-6 col-lg-4 event-item" data-category="Academic"><article class="card event-card h-100"><img src="img/event1.png" class="card-img event-image" alt="Qiskit Hackathon"><div class="card-body d-flex flex-column"><span class="category-pill academic">Academic</span><h3 class="h5 mt-3">Qiskit Hackathon</h3><p>Work with a team to explore quantum computing challenges.</p><div class="mt-auto"><p class="event-meta mb-3">📅 18 December 2026<br>📍 Innovation Lab</p><button class="btn btn-outline-success w-100 event-detail-button" type="button" data-bs-toggle="modal" data-bs-target="#eventModal" data-title="Qiskit Hackathon" data-category="Academic" data-date="18 December 2026" data-venue="Innovation Lab" data-description="Work with a team to explore quantum computing challenges.">View details</button></div></div></article></div><div class="col-md-6 col-lg-4 event-item" data-category="Academic"><article class="card event-card h-100"><img src="img/hero1.png" class="card-img-top event-image" alt="Research Poster Showcase"><div class="card-body d-flex flex-column"><span class="category-pill academic">Academic</span><h3 class="h5 mt-3">Research Poster Showcase</h3><p>Present student research, class projects and creative ideas.</p><div class="mt-auto"><p class="event-meta mb-3">📅 22 December 2026<br>📍 Main Hall</p><button class="btn btn-outline-success w-100 event-detail-button" type="button" data-bs-toggle="modal" data-bs-target="#eventModal" data-title="Research Poster Showcase" data-category="Academic" data-date="22 December 2026" data-venue="Main Hall" data-description="Present student research, class projects and creative ideas.">View details</button></div></div></article></div><div class="col-md-6 col-lg-4 event-item" data-category="Cultural"><article class="card event-card h-100"><img src="img/hero.png" class="card-img-top event-image" alt="Meri Kahani"><div class="card-body d-flex flex-column"><span class="category-pill cultural">Cultural</span><h3 class="h5 mt-3">Meri Kahani</h3><p>A storytelling gathering celebrating student experiences.</p><div class="mt-auto"><p class="event-meta mb-3">📅 24 December 2026<br>📍 Auditorium</p><button class="btn btn-outline-success w-100 event-detail-button" type="button" data-bs-toggle="modal" data-bs-target="#eventModal" data-title="Meri Kahani" data-category="Cultural" data-date="24 December 2026" data-venue="Auditorium" data-description="A storytelling gathering celebrating student experiences.">View details</button></div></div></article></div><div class="col-md-6 col-lg-4 event-item" data-category="Cultural"><article class="card event-card h-100"><img src="img/event3.jpg" class="card-img-top event-image" alt="Campus Auto Fest"><div class="card-body d-flex flex-column"><span class="category-pill cultural">Cultural</span><h3 class="h5 mt-3">Campus Auto Fest</h3><p>Explore automobiles, design and student creativity.</p><div class="mt-auto"><p class="event-meta mb-3">📅 27 December 2026<br>📍 University Grounds</p><button class="btn btn-outline-success w-100 event-detail-button" type="button" data-bs-toggle="modal" data-bs-target="#eventModal" data-title="Campus Auto Fest" data-category="Cultural" data-date="27 December 2026" data-venue="University Grounds" data-description="Explore automobiles, design and student creativity.">View details</button></div></div></article></div><div class="col-md-6 col-lg-4 event-item" data-category="Sports"><article class="card event-card h-100"><img src="img/hero2.jpg" class="card-img-top event-image" alt="Inter-Department Sports Day"><div class="card-body d-flex flex-column"><span class="category-pill sports">Sports</span><h3 class="h5 mt-3">Inter-Department Sports Day</h3><p>A friendly day of games and teamwork between departments.</p><div class="mt-auto"><p class="event-meta mb-3">📅 29 December 2026<br>📍 Sports Ground</p><button class="btn btn-outline-success w-100 event-detail-button" type="button" data-bs-toggle="modal" data-bs-target="#eventModal" data-title="Inter-Department Sports Day" data-category="Sports" data-date="29 December 2026" data-venue="Sports Ground" data-description="A friendly day of games and teamwork between departments.">View details</button></div></div></article></div><div class="col-md-6 col-lg-4 event-item" data-category="Career"><article class="card event-card h-100"><img src="img/event_2.jpg" class="card-img-top event-image" alt="Robowars"><div class="card-body d-flex flex-column"><span class="category-pill career">Career</span><h3 class="h5 mt-3">Robowars</h3><p>See student-built robots compete in a technology challenge.</p><div class="mt-auto"><p class="event-meta mb-3">📅 30 December 2026<br>📍 Engineering Block</p>
+  <button class="btn btn-outline-success w-100 event-detail-button" type="button" data-bs-toggle="modal" data-bs-target="#eventModal" data-title="Robowars" data-category="Career" data-date="30 December 2026" data-venue="Engineering Block" data-description="See student-built robots compete in a technology challenge.">View details</button></div></div></article></div></div>
+<div class="text-center py-4 d-none" id="noEvents">No events found in this category.</div>
+</main>
+
+
+<div class="modal fade" id="eventModal" tabindex="-1" ><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h2 class="modal-title fs-5" id="eventModalTitle">Event details</h2>
+  <button type="button" class="btn-close" data-bs-dismiss="modal" ></button></div>
+<div class="modal-body">
+  <p><strong>Category:</strong>
+   <span id="modalCategory"></span></p>
+  <p><strong>Date:</strong> 
+  <span id="modalDate"></span></p><p>
+  <strong>Venue:</strong>
+   <span id="modalVenue"></span>
+</p>
+  <p id="modalDescription"></p></div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<footer class="site-footer">
+  <div class="container text-center">
+    <p class="mb-1">NU Events Hub · FAST NUCES Islamabad Campus</p>
+    <small>Copyright &copy; 2026 NU Events Hub.</small>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
